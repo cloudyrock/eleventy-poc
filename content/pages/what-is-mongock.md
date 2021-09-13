@@ -23,7 +23,7 @@ There are several features Mongock enables you in your project:
 - Our team offers great support and is very responsive.
 - We are an open source tool, operating under the Apache License 2.0 
 - We maintain and update features regularly.
-- Currently  Used by several tech companies in different industries.
+- Currently used by several tech companies in different industries.
 - Adopted by well known frameworks such as JHipster as part of the scaffolding.
 - Can be used together with most, if not all, frameworks.
 - Can run in Standalone projects without depending on frameworks.
@@ -33,14 +33,14 @@ Get more information about our support model at dev@cloudyrock.io​ and we can 
 
 ​
 **History**
-Mongock began it's journey as a fork from the unmantained MongoBee repository, providing a more reliable locking mechanism during migrations. We considered this enhancement to be critical given the importance of this core feature in Distributed Systems to provide a production-ready solution. 
+Mongock began its journey as a fork from the unmantained MongoBee repository, providing a more reliable locking mechanism during migrations. We considered this enhancement to be critical given the importance of this core feature in Distributed Systems to provide a production-ready solution. 
 
 We have then invested our time in supporting it's adoption and enhancing features since. We are now shaping the Mongock product to expand further its capabilities and features, enabling us to Migrate safely across any Database or REST APIs using our distributed locking mechanism.
 
-If you'd like to help us during this journey, please don't hesitate to contact us _here_!
+If you'd like to help us during this journey, please don't hesitate to [contact us](mailto:dev@cloudyrock.io)
 
 
-**Our Roadmap**
+ **Our Roadmap**
 
 🚀  ***Currently supported by Mongock***
 
@@ -50,6 +50,6 @@ If you'd like to help us during this journey, please don't hesitate to contact u
 
 (Shall we share the exciting new features?)
 
-🧠  ***Some Ideas!***
+🧠  ***Some Ideas?***
 
-Please feel free to share with us _here_ if there is a feature that Mongock can offer that can help your project. 
+Please feel free to share with us [here](mailto:dev@cloudyrock.io) if there is a feature Mongock can support that can help your project. 
