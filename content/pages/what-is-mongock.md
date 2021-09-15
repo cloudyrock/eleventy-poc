@@ -31,6 +31,8 @@ There are several features Mongock enables you in your project:
 
 Get more information about our support model at dev@cloudyrock.io​ and we can help you walking you to production. 
 
+**Who uses Mongock?**
+(_Creds_)
 ​
 **History**
 Mongock began its journey as a fork from the unmantained MongoBee repository, providing a more reliable locking mechanism during migrations. We considered this enhancement to be critical given the importance of this core feature in Distributed Systems to provide a production-ready solution. 
@@ -39,8 +41,7 @@ We have then invested our time in supporting it's adoption and enhancing feature
 
 If you'd like to help us during this journey, please don't hesitate to [contact us](mailto:dev@cloudyrock.io)
 
-
- **Our Roadmap**
+**Our Roadmap**
 
 🚀  ***Currently supported by Mongock***
 
