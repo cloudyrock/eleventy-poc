@@ -70,6 +70,9 @@ public class ClientInitializerChange {
 
   private final MongoTemplate mongoTemplate;
   private final ThirPartyService thirdPartyService;
+  
+  /** This is the constructor to which mongock will inject dependencies **/
+  @ChangeUnitConstructor
   public ClientInitializerChange(MongoTemplate mongoTemplate,
                                  ThirPartyService thirdPartyService) {
     this.mongoTemplate = mongoTemplate;
