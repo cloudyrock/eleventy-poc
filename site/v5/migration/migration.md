@@ -38,6 +38,18 @@ A migration is constituted by an ordered list of ChangeUnits. Each of the Change
     - On the other hand, in non-transactional environments, Mongock will try to provide an artificial transactional atmosphere by rolling back the failed change manually.
 2. In targeted operations, such as `undo`, `upgrade`, etc., the ChangeUnit is the unit of the operation. For example, when performing an `undo` operation, it needs to specify the _ChangeUnitId_ until which all the ChangeUnits are reverted(inclusive).
 3. A ChangeUnit has only one migration method, which is marked with the **@Execution** annotation, and a rollback method, annotated with **@RollbackExecution**.
+------------------------------------------------------
+
+## ChangeUnit Constructor
+
+
+Every class marked as `@ChangeUnit` will be marked as a migration class and Mongock will inject dependencies to one of
+the valid constructor as followed:
+
+- In a class with more than one valid constructor, It would be recommended with warning to have exactly one of the constructor to be marked with **@ChangeUnitConstructor**.
+  - If such class doesn't have any constructor with **ChangeUnitConstructor**, Mongock will choose the first for dependency injection, this will become error in version 6.
+- A class with only one valid constructor can choose to skip annotating the constructor, but if possible to do so, would be recommended for clarity of code.
+
 
 ------------------------------------------------------
 
@@ -81,6 +93,8 @@ public class MyMigrationChangeUnit {
 
   private final MongoTemplate template;
   
+  // Note this annotation is Optional here as only one valid constructor exist
+  @ChangeUnitConstructor
   public MyMigrationChangeUnit(MongoTemplate template) {
     this.template = template;
   }
