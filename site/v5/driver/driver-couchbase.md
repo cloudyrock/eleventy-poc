@@ -25,7 +25,7 @@ This section explains the Mongock Driver for Couchbase and how to use it.
 Mongock provides the `CouchbaseDriver`, which is compatible with official couchbase Java SDK `com.couchbase.client:java-client` 3.x.x.
 `CouchbaseDriver` is tested against Couchbase Server version 6 and Couchbase Server version 7+, but should be working even with older versions.
 
-You can also use the Mongock spring extension to get advantage from the autconfigure approach with Springboot.
+You can also use the Mongock spring extension to get advantage from the autoconfigure approach with Springboot.
 
 <br />
 
@@ -84,7 +84,7 @@ CouchbaseDriver driver = CouchbaseDriver.withDefaultLock(cluster, collection);
 ```
 
 ## Examples 
-<p class="successAlt">Please visit out example projects in [this repo](https://github.com/mongock/mongock-examples/tree/master/couchbase) for more information</p>
+<p class="successAlt">Please visit our example projects in <a href="https://github.com/mongock/mongock-examples/tree/master/mongodb">this repo</a> for more information</p>
 
 
 
