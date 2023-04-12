@@ -27,6 +27,7 @@ The two main responsabilities of the driver are:
 - [DynamoDB](/v5/driver/dynamodb)
 - [CosmosDB](/v5/driver/cosmosdb)
 - [DocumentDB](/v5/driver/documentdb)
+- [Couchbase](/v5/driver/couchbase)
 - **Elasticsearch** (coming soon)
 - **Cassandra** (coming soon)
 - **SQL** (coming soon)
