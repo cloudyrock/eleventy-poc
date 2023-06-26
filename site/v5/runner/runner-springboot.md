@@ -112,7 +112,7 @@ Mongock supports the Spring `@Profile` annoation.
 When a changeUnit is annotated with `@Profile`, it will only executed if any of the profiles present in the annotation is contained in the Spring activeProfiles array.
 
 ### Events
-As explained in the [events page](/v5/events), Mongock provides three Events: StartedEvent, SuccessEvent and FailureEvent. In the Springboot world, these are represented by:
+As explained in the [events page](/v5/features/events), Mongock provides three Events: StartedEvent, SuccessEvent and FailureEvent. In the Springboot world, these are represented by:
 - SpringMigrationStartedEvent
 - SpringMigrationSuccessEvent
 - SpringMigrationFailureEvent
