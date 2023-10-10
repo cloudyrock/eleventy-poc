@@ -709,7 +709,7 @@ function changeVersion() {
 <p><a href="https://docs.microsoft.com/en-us/azure/cosmos-db/introduction">Azure Cosmos DB</a> provides multiple APIs to connect to it. One of them it's the API for MongoDB, which makes it easy to use Cosmos DB as if it were a MongoDB database.</p>
 <p>You can leverage your MongoDB experience and continue to use your favorite MongoDB drivers, SDKs, and tools by pointing your application to the API for MongoDB account's connection string.</p>
 <h2 id="getting-started"><a class="header-anchor" href="#getting-started">#</a> Getting started</h2>
-<p><strong>You can use Mongock to manage your Cosmos DB migrations in the same way you would do with MongoDB</strong>, using one of the drivers Mongock provides for MongoDB. You can see how to use it in our <a href="/v5/driver/mongodb">MongoDB driver section</a></p>
+<p><strong>You can use Mongock to manage your Cosmos DB migrations in the same way you would do with MongoDB</strong>, using one of the drivers Mongock provides for MongoDB. You can see how to use it in our <a href="/v5/driver/mongodb-sync">MongoDB driver section</a></p>
 <h2 id="important-notes"><a class="header-anchor" href="#important-notes">#</a> Important notes</h2>
 <h3 id="sharding-the-mongock-changelog-collection"><a class="header-anchor" href="#sharding-the-mongock-changelog-collection">#</a> Sharding the Mongock ChangeLog collection</h3>
 <p>If you want to shard the Mongock changeLog collection, you need to use the key <code>executionId</code> as shard key. This is due to the fact that the <code>executionId</code> is the prefix of the Mongock's compound index and the MongoDB official documentation states:</p>
