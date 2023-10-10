@@ -25,7 +25,7 @@ eleventyNavigation:
 You can leverage your MongoDB experience and continue to use your favorite MongoDB drivers, SDKs, and tools by pointing your application to the API for MongoDB account's connection string.
 
 ## Getting started
-**You can use Mongock to manage your Cosmos DB migrations in the same way you would do with MongoDB**, using one of the drivers Mongock provides for MongoDB. You can see how to use it in our [MongoDB driver section](/v5/driver/mongodb)
+**You can use Mongock to manage your Cosmos DB migrations in the same way you would do with MongoDB**, using one of the drivers Mongock provides for MongoDB. You can see how to use it in our [MongoDB driver section](/v5/driver/mongodb-sync)
  
 ## Important notes
 ### Sharding the Mongock ChangeLog collection
