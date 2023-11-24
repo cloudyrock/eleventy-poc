@@ -65,7 +65,7 @@ Multiple attributes can be passed to ChangeUnits to configure these. The followi
 | Method            | Description                                  | Mandatory?  | Default value |
 | ----------------- |:---------------------------------------------| :-----------:|:-------------:|
 | id           | Returns the ChangeUnit's id that will be stored in the ChangeUnit history table/collection and will the way to identify a ChangeUnit. The combination of this field and the author must be unique among the changeunits.|YES|       n/a     |
-| order        | Returns the ChangeUnit's execution order. | YES | n/a |
+| order        | Returns the ChangeUnit's execution order. The order will be applied treating the value as alphanumeric.  | YES | n/a |
 | author       | Returns the ChangeUnit's author. The combination of this and the author must be unique among the changeunits.|     NO     | `default-author` |
 | runAlways      | Returns whether the ChangeUnit is runAlways or not. For more information, visit the [runner configuration section](/v5/runner/#configuration).  | NO | `false` |
 | systemVersion| Returns the ChangeUnit's system version. For more information, visit the [runner configuration section](/v5/runner/#configuration).| NO | `0` |
@@ -75,8 +75,10 @@ Multiple attributes can be passed to ChangeUnits to configure these. The followi
 ## ChangeUnit example
 <p class="successAlt">ChangeUnits accept dependency injections directly in the method and at constructor level</p>
 
+<p class="tip">The value of <b>@ChangeUnit</b>'s <b>order</b> annotation field will be treated as alphanumeric.</p>
+
 ```java
-@ChangeUnit(id="myMigrationChangeUnitId", order = "1", author = "mongock_test", systemVersion = "1")
+@ChangeUnit(id="myMigrationChangeUnitId", order = "001", author = "mongock_test", systemVersion = "1")
 public class MyMigrationChangeUnit {
 
   private final MongoTemplate template;

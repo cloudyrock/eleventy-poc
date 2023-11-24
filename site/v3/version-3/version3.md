@@ -367,7 +367,7 @@ As explained in section [Build and run SpringBootMongock](#build-and-run-springb
 For example having a springdata repository  'PersonRepository' in your project, that you wish to use in your changeSet, you can use it like follow
 
 ```java
-@ChangeLog(order = "1")
+@ChangeLog(order = "001")
 @Profile("test")
 public class ChangelogForTestEnv{
   @ChangeSet(author = "testuser", id = "myTestChangest", order = "01")
@@ -401,7 +401,7 @@ public void devEnvOnly(MongoDatabase db){
 ```
 _Example 2_: all change sets in a changelog will be invoked for a `test` profile
 ```java
-@ChangeLog(order = "1")
+@ChangeLog(order = "001")
 @Profile("test")
 public class ChangelogForTestEnv{
   @ChangeSet(author = "testuser", id = "myTestChangest", order = "01")

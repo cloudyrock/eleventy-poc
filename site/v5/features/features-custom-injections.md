@@ -33,7 +33,7 @@ There are two ways you can injet your custom injections to a Mongock changeUnit.
 ## In a constructor
 ```java
 
-@ChangeUnit(id="client-initializer", order = "1", author = "mongock")
+@ChangeUnit(id="client-initializer", order = "001", author = "mongock")
 public class ClientInitializerChange {
 
   private final MongoTemplate mongoTemplate;
@@ -51,7 +51,7 @@ public class ClientInitializerChange {
 ## In the methods
 ```java
 
-@ChangeUnit(id="client-initializer", order = "1", author = "mongock")
+@ChangeUnit(id="client-initializer", order = "001", author = "mongock")
 public class ClientInitializerChange {
 
   @Execution
@@ -190,7 +190,7 @@ This will tell Mongock you don't want to proxy that bean in that specific change
 This is useful when, in general you are fine proxing the bean, but there are some exceptions or when you don't want to use the annotation in your type, so you annotate all your custom bean parameters in all your changeSet methods.
 
 ```java
-@ChangeLog(order = "1")
+@ChangeLog(order = "001")
 public class ClientInitializerChangeLog {
 
     @ChangeSet(id = "data-initializer-with-repository", order = "001", author = "mongock")

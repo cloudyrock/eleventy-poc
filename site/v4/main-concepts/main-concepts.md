@@ -23,7 +23,7 @@ A Mongock executable process a set of **changeLogs**, which are the classes that
 We recommend to read our best practices for creating and designing changeLogs.
 
 ```java
-@ChangeLog(order = "1")
+@ChangeLog(order = "001")
 public class ClientInitializerChangeLog {
 
     @ChangeSet(id = "data-initializer", author = "mongock", order = "001")

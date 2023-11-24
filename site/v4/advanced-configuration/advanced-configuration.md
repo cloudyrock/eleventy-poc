@@ -82,7 +82,7 @@ When this property is set to `false` in your changeSet annotation,  Mongock won'
 However, please note that the changeLog entry will be marked as **FAILED** in the changeLogCollection, so next Mongock executions will try to process it again.
 
 ```java
-@ChangeLog(order = "1")
+@ChangeLog(order = "001")
 public class ClientInitializerChangeLog {
 
     @ChangeSet(id = "data-initializer", author = "mongock", failFast = false)

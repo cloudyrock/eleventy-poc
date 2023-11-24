@@ -48,7 +48,7 @@ public void changeSetForDevOnly(MongoDatabase db){
 _**Example 2**_: all change sets in a changeLog will be invoked for a `test` profile
 
 ```java
-@ChangeLog(order = "1")
+@ChangeLog(order = "001")
 @Profile("test")
 public class changeLogForTestOnly{
 

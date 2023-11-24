@@ -65,7 +65,7 @@ import io.mongock.api.annotations.Execution;
 import io.mongock.api.annotations.ChangeUnit;
 import io.mongock.api.annotations.RollbackExecution;
 
-@ChangeUnit(id="client-initializer", order = "1", author = "mongock")
+@ChangeUnit(id="client-initializer", order = "001", author = "mongock")
 public class ClientInitializerChange {
 
   private final MongoTemplate mongoTemplate;

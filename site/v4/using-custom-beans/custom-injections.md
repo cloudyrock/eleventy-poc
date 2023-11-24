@@ -19,7 +19,7 @@ Mongock allows you to use  custom beans in your changeSet methods, so you are no
 <br><br>
 
 ```java
-@ChangeLog(order = "1")
+@ChangeLog(order = "001")
 public class ClientInitializer {
 
     @ChangeSet(id = "data-initializer-with-repository", order = "001", author = "mongock")
@@ -40,7 +40,7 @@ public class ClientInitializer {
 If you are using Spring Runner, you will be able to access to all of the beans present in the Spring context, just by adding the required bean in your changeSet as parameter.
 
 ```java
-@ChangeLog(order = "1")
+@ChangeLog(order = "001")
 public class ClientInitializerChangeLog {
 
     @ChangeSet(id = "data-initializer", author = "mongock", order = "001")
@@ -136,7 +136,7 @@ This will tell Mongock you don't want to proxy that bean in that specific change
 This is useful when, in general you are fine proxing the bean, but there are some exceptions or when you don't want to use the annotation in your type, so you annotate all your custom bean parameters in all your changeSet methods.
 
 ```java
-@ChangeLog(order = "1")
+@ChangeLog(order = "001")
 public class ClientInitializerChangeLog {
 
     @ChangeSet(id = "data-initializer-with-repository", order = "001", author = "mongock")
