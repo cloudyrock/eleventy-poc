@@ -71,6 +71,14 @@ Following the [get started section](/v5/get-started#steps-to-run-mongock), this 
 </dependency>
 ```
 
+#### With Springboot 3
+```xml
+<dependency>
+  <groupId>io.mongock</groupId>
+  <artifactId>couchbase-springboot-v3-driver</artifactId>
+</dependency>
+```
+
 ### Build the driver (setps 5)
 
 <p class="successAlt"><b>This step is only required for builder approach.</b> Mongock handles it when autoconfiguration is enabled.</p>
@@ -84,7 +92,7 @@ CouchbaseDriver driver = CouchbaseDriver.withDefaultLock(cluster, collection);
 ```
 
 ## Examples 
-<p class="successAlt">Please visit our example projects in <a href="https://github.com/mongock/mongock-examples/tree/master/mongodb">this repo</a> for more information</p>
+<p class="successAlt">Please visit our example projects in <a href="https://github.com/mongock/mongock-examples/tree/master/couchbase">this repo</a> for more information</p>
 
 
 
