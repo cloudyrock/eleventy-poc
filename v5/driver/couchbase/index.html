@@ -412,20 +412,6 @@ function changeVersion() {
   
   <h7 class="menu-item">
     
-      <a class="menu-item "  href="/v5/contributing/index.html">
-        Contributing
-      </a>
-    
-  </h7>
-
-          <nav class="Contributing">
-            
-          </nav>
-         
-          
-  
-  <h7 class="menu-item">
-    
       <a class="menu-item "  href="/v5/faq/index.html">
         FAQ
       </a>
@@ -433,6 +419,20 @@ function changeVersion() {
   </h7>
 
           <nav class="FAQ">
+            
+          </nav>
+         
+          
+  
+  <h7 class="menu-item">
+    
+      <a class="menu-item "  href="/v5/contributing/index.html">
+        Contributing
+      </a>
+    
+  </h7>
+
+          <nav class="Contributing">
             
           </nav>
          
@@ -750,6 +750,8 @@ function changeVersion() {
 <pre class="language-xml"><code class="language-xml"><div class="highlight-line"><span class="token comment">&lt;!--Standalone use--></span></div><div class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span></div><div class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>io.mongock<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span></div><div class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>couchbase-driver<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span></div><div class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></div><div class="highlight-line"></div></code></pre>
 <h4 id="with-springboot"><a class="header-anchor" href="#with-springboot">#</a> With Springboot</h4>
 <pre class="language-xml"><code class="language-xml"><div class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span></div><div class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>io.mongock<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span></div><div class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>couchbase-springboot-driver<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span></div><div class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></div></code></pre>
+<h4 id="with-springboot-3"><a class="header-anchor" href="#with-springboot-3">#</a> With Springboot 3</h4>
+<pre class="language-xml"><code class="language-xml"><div class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span></div><div class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>io.mongock<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span></div><div class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>couchbase-springboot-v3-driver<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span></div><div class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></div></code></pre>
 <h3 id="build-the-driver-(setps-5)"><a class="header-anchor" href="#build-the-driver-(setps-5)">#</a> Build the driver (setps 5)</h3>
 <p class="successAlt"><b>This step is only required for builder approach.</b> Mongock handles it when autoconfiguration is enabled.</p>
 These classes provide the same two static initializers
@@ -759,7 +761,7 @@ These classes provide the same two static initializers
 </ul>
 <pre class="language-java"><code class="language-java"><div class="highlight-line"><span class="token class-name">CouchbaseDriver</span> driver <span class="token operator">=</span> <span class="token class-name">CouchbaseDriver</span><span class="token punctuation">.</span><span class="token function">withDefaultLock</span><span class="token punctuation">(</span>cluster<span class="token punctuation">,</span> collection<span class="token punctuation">)</span><span class="token punctuation">;</span></div></code></pre>
 <h2 id="examples"><a class="header-anchor" href="#examples">#</a> Examples</h2>
-<p class="successAlt">Please visit our example projects in <a href="https://github.com/mongock/mongock-examples/tree/master/mongodb">this repo</a> for more information</p>
+<p class="successAlt">Please visit our example projects in <a href="https://github.com/mongock/mongock-examples/tree/master/couchbase">this repo</a> for more information</p>
 <h4 id="example-autoconfiguration-with-springboot"><a class="header-anchor" href="#example-autoconfiguration-with-springboot">#</a> Example autoconfiguration with Springboot</h4>
 <pre class="language-yaml"><code class="language-yaml"><div class="highlight-line"><span class="token key atrule">spring</span><span class="token punctuation">:</span></div><div class="highlight-line">  <span class="token key atrule">data</span><span class="token punctuation">:</span></div><div class="highlight-line">    <span class="token key atrule">couchbase</span><span class="token punctuation">:</span></div><div class="highlight-line">      <span class="token key atrule">bucket-name</span><span class="token punctuation">:</span> bucket</div><div class="highlight-line">  <span class="token key atrule">couchbase</span><span class="token punctuation">:</span></div><div class="highlight-line">    <span class="token key atrule">connection-string</span><span class="token punctuation">:</span> couchbase<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span><span class="token number">11210</span></div><div class="highlight-line">    <span class="token key atrule">username</span><span class="token punctuation">:</span> Administrator</div><div class="highlight-line">    <span class="token key atrule">password</span><span class="token punctuation">:</span> password</div><div class="highlight-line"></div><div class="highlight-line"><span class="token key atrule">mongock</span><span class="token punctuation">:</span></div><div class="highlight-line">  <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></div><div class="highlight-line">  <span class="token key atrule">migration-scan-package</span><span class="token punctuation">:</span> io.mongock.examples.couchbase.springboot.migration</div></code></pre>
 <pre class="language-java"><code class="language-java"><div class="highlight-line"><span class="token annotation punctuation">@EnableMongock</span></div><div class="highlight-line"><span class="token annotation punctuation">@SpringBootApplication</span></div><div class="highlight-line"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">QuickStartApp</span> <span class="token punctuation">{</span></div><div class="highlight-line">    </div><div class="highlight-line">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span></div><div class="highlight-line">        <span class="token class-name">SpringApplicationBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sources</span><span class="token punctuation">(</span><span class="token class-name">QuickStartApp</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span><span class="token punctuation">;</span></div><div class="highlight-line">    <span class="token punctuation">}</span></div><div class="highlight-line">    </div><div class="highlight-line"><span class="token punctuation">}</span></div></code></pre>
