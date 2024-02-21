@@ -36,7 +36,7 @@ If you want to shard the Mongock changeLog collection, you need to use the key `
 You can find more information about [shard keys](https://docs.mongodb.com/manual/core/sharding-shard-key/#shard-key-indexes) and [prefixes](https://docs.mongodb.com/manual/core/index-compound/#prefixes)
 
 ### Transactions
- Although MongoDB does support Multi-document transactions(in a single or multiple, and sharded collections), they are not supported across collections or in sharded collections in version 4.0.
+ Although MongoDB does support Multi-document transactions(in a single or multiple, and sharded collections), they are not supported across collections or in sharded collections in Cosmos DB version 4.0 (non-vCore).
 
 
 
