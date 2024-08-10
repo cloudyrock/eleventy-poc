@@ -28,17 +28,19 @@ As its name suggests, a changeUnit represents the unit of a migration. By defaul
 
 ## Configuration
 
-There are two points where the transactions are configured to be enforced or disabled, the property `mongock.transactionEnabled`(setTransactionEnabled method in the builder) and the **driver**.
+<p class="warningAlt">As of Mongock release 5.5, <b>mongock.transactionEnabled</b> property is deprecated in favour of new <b>mongock.transactional</b> property. Note that is not compatible to use both of them. In a future release <b>mongock.transactionEnabled</b> will be removed.</p>
 
-In every driver's page, you will find enough information about how to enable the native transactions. Sometimes they are enabled by default and other times, like in the Springboot ecosystems, the transactions manager needs to be injected in the context.
+There are two points where the transactions are configured to be enforced or disabled, the property `mongock.transactional`(setTransactional method in the builder) and the **driver**.
+
+In every driver's page, you will find enough information about how to enable the native transactions.
 
 
 As explained in the [runner properties table](/v5/runner#Configuration), the Mongock native transactionability follows the next logic:
 
 <div class="success">
-<p >When <b>mongock.transactionEnabled</b> is true, it enforces native transactions, throwing an exception is the driver is not capable of it.</p>
-<p >When <b>mongock.transactionEnabled</b> is false, it disables the transactions and ignores the transactionability of the driver.</p>
-<p >When <b>mongock.transactionEnabled</b> is null, it totally delegates on the driver the transactionability of the migration.</p>
+<p >When <b>mongock.transactional</b> is true, it enforces native transactions, throwing an exception is the driver is not capable of it.</p>
+<p >When <b>mongock.transactional</b> is false, it disables the transactions and ignores the transactionability of the driver.</p>
+<p >When <b>mongock.transactional</b> is null, it totally delegates on the driver the transactionability of the migration.</p>
 </div>
  
 

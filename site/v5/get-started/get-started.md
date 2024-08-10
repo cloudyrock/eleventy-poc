@@ -120,7 +120,7 @@ mongock:
     - io.mongock.examples.migration
 ```
 #### Indicate spring to use Mongock
-This approach lies on the underlying framework to provide a smoothly experience. In this case, we take advantage of the Springboot annotations to tell Spring how to run Mongock. However, this approach requires the Spring ApplicationContext, MongoTemplate and MongoTransactionManager to be injected in the Spring context.
+This approach lies on the underlying framework to provide a smoothly experience. In this case, we take advantage of the Springboot annotations to tell Spring how to run Mongock. However, this approach requires the Spring ApplicationContext and MongoTemplate to be injected in the Spring context.
 
 ```java
 @EnableMongock

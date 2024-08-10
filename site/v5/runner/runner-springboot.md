@@ -165,7 +165,7 @@ mongock:
       change-log-class: legacyMigrationClassField
       change-set-method: legacyChangeSetMethodField
   track-ignored: false #Default true
-  transaction-enabled: true
+  transactional: true
   runner-type: applicationrunner
   enabled: true #Default true
 ```
@@ -195,6 +195,6 @@ builder
         "legacyChangeLogClassField", 
         "legacyChangeSetMethodField"))
     .setTrackIgnored(false)
-    .setTransactionEnabled(true)
+    .setTransactional(true)
     .buildInitializingBeanRunner();
 ```    

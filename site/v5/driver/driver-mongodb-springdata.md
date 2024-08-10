@@ -91,7 +91,7 @@ driver.enableTransaction();
 ```
 Properties
 ```yaml
-mongock.transaction-enabled=true
+mongock.transactional=true
 ```
 
 _Keep in mind that your MongoDB database must allow multi-document ACID transactions_
