@@ -712,13 +712,14 @@ function changeVersion() {
 <p>Mongock always try to provide a transactional environment as much as possible. When native transactions are not possible, it tries to rollback the changes manually with the <a href="/v5/migration#changeunit-methods">@RollbackExecution</a> method.</p>
 </div>
 <h2 id="configuration"><a class="header-anchor" href="#configuration">#</a> Configuration</h2>
-<p>There are two points where the transactions are configured to be enforced or disabled, the property <code>mongock.transactionEnabled</code>(setTransactionEnabled method in the builder) and the <strong>driver</strong>.</p>
-<p>In every driver's page, you will find enough information about how to enable the native transactions. Sometimes they are enabled by default and other times, like in the Springboot ecosystems, the transactions manager needs to be injected in the context.</p>
+<p class="warningAlt">As of Mongock release 5.5, <b>mongock.transactionEnabled</b> property is deprecated in favour of new <b>mongock.transactional</b> property. Note that is not compatible to use both of them. In a future release <b>mongock.transactionEnabled</b> will be removed.</p>
+<p>There are two points where the transactions are configured to be enforced or disabled, the property <code>mongock.transactional</code>(setTransactional method in the builder) and the <strong>driver</strong>.</p>
+<p>In every driver's page, you will find enough information about how to enable the native transactions.</p>
 <p>As explained in the <a href="/v5/runner#Configuration">runner properties table</a>, the Mongock native transactionability follows the next logic:</p>
 <div class="success">
-<p >When <b>mongock.transactionEnabled</b> is true, it enforces native transactions, throwing an exception is the driver is not capable of it.</p>
-<p >When <b>mongock.transactionEnabled</b> is false, it disables the transactions and ignores the transactionability of the driver.</p>
-<p >When <b>mongock.transactionEnabled</b> is null, it totally delegates on the driver the transactionability of the migration.</p>
+<p >When <b>mongock.transactional</b> is true, it enforces native transactions, throwing an exception is the driver is not capable of it.</p>
+<p >When <b>mongock.transactional</b> is false, it disables the transactions and ignores the transactionability of the driver.</p>
+<p >When <b>mongock.transactional</b> is null, it totally delegates on the driver the transactionability of the migration.</p>
 </div>
 <h2 id="how-it-works"><a class="header-anchor" href="#how-it-works">#</a> How it works</h2>
 <p>The easiest way to understand how Mongock handles the transactions is by looking at <a href="/v5/technical-overview#process-steps">this section</a>.</p>
