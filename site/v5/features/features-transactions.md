@@ -51,5 +51,5 @@ The easiest way to understand how Mongock handles the transactions is by looking
 
 ## Best practices
 
-- Always set explicitly the `mongock.transactionEnabled` property to true/false.
+- Always set explicitly the `mongock.transactional` property to true/false.
 - DDL operations placed in the @BeforeExecution method of the changeUnit.
